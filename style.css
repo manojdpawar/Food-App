@@ -1,0 +1,156 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 55px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(247, 234, 234);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1 rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction:column;
+    padding:3px 100px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    height: 42px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color: black;
+    text-align: ;
+
+}
+#foodbox h2{
+    color: white;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+#foodbox p{
+    color:white;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#foodbox{
+    display: flex;
+    flex-direction:row;
+    padding:3px 50px;
+    height: 180px;
+    background: rgb(58, 56, 56);
+    opacity: 100%;
+    margin: auto;
+}
+#foodbox.box{ 
+    padding: 5px 34px;
+    margin: 10px 55px;
+    
+}
+foodbox.box2{ 
+    padding: 5px 34px;
+    margin: 10px 55px;
+    
+}    
+#foodbox .box img{ 
+   height: 120px;
+   margin: auto;
+   display: block;
+}
+
+#foodbox td{
+    color: white;
+    padding: 3px;
+    text-align: center;
+    font-size: 1rem;
+}
+ /* recomneded section  */
+
+#recomended{
+    display: flex;
+    flex-direction:row;
+    padding:5px 200px;
+    height: 200px;
+    opacity: 100%;
+    margin: auto;
+    text-align: justify;
+    text-justify: center; 
+}
+
+#recomended.box{ 
+    display: block;
+    padding:34px;
+    margin: auto;  
+}
+#recomended.box2{ 
+    padding:34px;
+    margin: 10px 55px;
+}
